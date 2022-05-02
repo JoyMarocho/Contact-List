@@ -1,6 +1,7 @@
+import pyperclip
 import unittest # Importing the unittest module
 from contact import Contact # Importing the contact class
-import pyperclip
+
 
 class TestContact(unittest.TestCase):
     '''
@@ -15,7 +16,7 @@ def setUp(self):
         '''
         Set up method to run before each test cases.
         '''
-        self.new_contact = Contact()
+        self.new_contact = Contact("James","Muriuki","0712345678","james@ms.com") # create contact object
 
 def test_init(self):
         '''
